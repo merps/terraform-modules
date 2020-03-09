@@ -19,7 +19,7 @@ The term 'child' in this module refers to any AWS account that is **NOT** used f
 
 ## Usage
 
-The following example is for deploying the module inside of a project's production environment main.tf file, it is assumed that you have the account ID of the client's central auth account.
+The following example is for deploying the module inside of a project's production environment [main.tf] file, it is assumed that you have the account ID of the client's central auth account.
 
 \prod\main.tf:
 ```
