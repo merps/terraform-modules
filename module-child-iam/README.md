@@ -114,7 +114,6 @@ The following example is for deploying the module inside of a project's logging 
 | iam_role_for_cross_account_system_administrator | ARN of iam_role_for_cross_account_system_administrator (for use by client / project team only) |
 | iam_role_for_cross_account_view_only_access | ARN of iam_role_for_cross_account_view_only_access (for use by client / project team only) |
 | iam_role_for_devops_cross_account_administrator_access | ARN of iam_role_for_devops_cross_account_administrator_access (for use by DevOps team only) |
-<<<<<<< HEAD
 | iam_role_for_devops_cross_account_billing | ARN of iam_role_for_devops_cross_account_billing (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_data_scientist | ARN of iam_role_for_devops_cross_account_data_scientist (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_database_administrator | ARN of iam_role_for_devops_cross_account_database_administrator (for use by DevOps team only) |
@@ -123,8 +122,6 @@ The following example is for deploying the module inside of a project's logging 
 | iam_role_for_devops_cross_account_security_audit | ARN of iam_role_for_devops_cross_account_security_audit (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_support_user | ARN of iam_role_for_devops_cross_account_support_user (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_system_administrator | ARN of iam_role_for_devops_cross_account_system_administrator (for use by DevOps team only) |
-| iam_role_for_devops_cross_account_view_only_access | ARN of iam_role_for_devops_cross_account_view_only_access (for use by DevOps team only) |
-=======
 | iam_role_for_devops_cross_account_billing | ARN of iam_role_for_ddevops_cross_account_billing (for use by DDevOps team only) |
 | iam_role_for_devops_cross_account_data_scientist | ARN of iam_role_for_ddevops_cross_account_data_scientist (for use by DDevOps team only) |
 | iam_role_for_devops_cross_account_database_administrator | ARN of iam_role_for_devops_cross_account_database_administrator (for use by DevOps team only) |
@@ -134,4 +131,3 @@ The following example is for deploying the module inside of a project's logging 
 | iam_role_for_ddevops_cross_account_support_user | ARN of iam_role_for_devops_cross_account_support_user (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_system_administrator | ARN of iam_role_for_devops_cross_account_system_administrator (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_view_only_access | ARN of iam_role_for_devops_cross_account_view_only_access (for use by DevOps team only) |
->>>>>>> de095a4c56851c831d404a666fe8c025e2b8a7b7
