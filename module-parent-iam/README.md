@@ -3,7 +3,7 @@
 The [parent-iam] module is for use with a parent AWS account that is designated for user authentication purposes only (otherwise known as central auth), the module sets up the following:
 
 * For DevOps team:
-    * IAM trust policy to allow DevOps team to assume roles in this account from DevOps central auth account (defaults to [master-central])
+    * IAM trust policy to allow DevOps team to assume roles in this account from DevOps central auth account (defaults to [master-central-auth])
     * IAM roles that utilise AWS-managed job function role policies for DevOps team
 
 * For client / project team:
