@@ -35,7 +35,7 @@ The term 'child' in this module refers to any AWS account that is **NOT** used f
     * Denotes the resources created by Terraform
     * Due to the use of the 'count' parameter, for each job-function policy, an IAM Role, IAM Group and IAM Group Policy Attachment resource will be created for each AWS account in the [client-child-accounts] map
 
-![module-parent-iam.png](https://github.org/merps/terrafom-modules/raw/FEATURE%2Fterraform-module-iam/terraform/module-parent-iam/module-parent-iam.png)
+![module-parent-iam.png](https://github.com/merps/terraform-modules/blob/master/module-parent-iam/module-parent-iam.png)
 
 ## Usage
 
