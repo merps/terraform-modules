@@ -66,7 +66,7 @@ The following example is for deploying the module inside of a project's logging 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | client-auth-account-id | Account ID of the client / project's central auth AWS account. | string | - | yes |
-| ddevops-auth-account-id | Account ID of the DDevOps central auth AWS account, defaults to account id of [strut-central]. | string | `946231429173` | no |
+| ddevops-auth-account-id | Account ID of the DDevOps central auth AWS account, defaults to account id of [master-central-auth]. | string | `123456789` | no |
 | policy-arn-for-administrator-access |  | string | `arn:aws:iam::aws:policy/AdministratorAccess` | no |
 | policy-arn-for-billing |  | string | `arn:aws:iam::aws:policy/job-function/Billing` | no |
 | policy-arn-for-data-scientist |  | string | `arn:aws:iam::aws:policy/job-function/DataScientist` | no |
@@ -113,13 +113,13 @@ The following example is for deploying the module inside of a project's logging 
 | iam_role_for_cross_account_support_user | ARN of iam_role_for_cross_account_support_user (for use by client / project team only) |
 | iam_role_for_cross_account_system_administrator | ARN of iam_role_for_cross_account_system_administrator (for use by client / project team only) |
 | iam_role_for_cross_account_view_only_access | ARN of iam_role_for_cross_account_view_only_access (for use by client / project team only) |
-| iam_role_for_ddevops_cross_account_administrator_access | ARN of iam_role_for_ddevops_cross_account_administrator_access (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_billing | ARN of iam_role_for_ddevops_cross_account_billing (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_data_scientist | ARN of iam_role_for_ddevops_cross_account_data_scientist (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_database_administrator | ARN of iam_role_for_ddevops_cross_account_database_administrator (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_network_administrator | ARN of iam_role_for_ddevops_cross_account_network_administrator (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_power_user_access | ARN of iam_role_for_ddevops_cross_account_power_user_access (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_security_audit | ARN of iam_role_for_ddevops_cross_account_security_audit (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_support_user | ARN of iam_role_for_ddevops_cross_account_support_user (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_system_administrator | ARN of iam_role_for_ddevops_cross_account_system_administrator (for use by DDevOps team only) |
-| iam_role_for_ddevops_cross_account_view_only_access | ARN of iam_role_for_ddevops_cross_account_view_only_access (for use by DDevOps team only) |
+| iam_role_for_devops_cross_account_administrator_access | ARN of iam_role_for_devops_cross_account_administrator_access (for use by DevOps team only) |
+| iam_role_for_devops_cross_account_billing | ARN of iam_role_for_ddevops_cross_account_billing (for use by DDevOps team only) |
+| iam_role_for_devops_cross_account_data_scientist | ARN of iam_role_for_ddevops_cross_account_data_scientist (for use by DDevOps team only) |
+| iam_role_for_devops_cross_account_database_administrator | ARN of iam_role_for_devops_cross_account_database_administrator (for use by DevOps team only) |
+| iam_role_for_devops_cross_account_network_administrator | ARN of iam_role_for_ddevops_cross_account_network_administrator (for use by DevOps team only) |
+| iam_role_for_ddevops_cross_account_power_user_access | ARN of iam_role_for_devops_cross_account_power_user_access (for use by DevOps team only) |
+| iam_role_for_ddevops_cross_account_security_audit | ARN of iam_role_for_devops_cross_account_security_audit (for use by DevOps team only) |
+| iam_role_for_ddevops_cross_account_support_user | ARN of iam_role_for_devops_cross_account_support_user (for use by DevOps team only) |
+| iam_role_for_devops_cross_account_system_administrator | ARN of iam_role_for_devops_cross_account_system_administrator (for use by DevOps team only) |
+| iam_role_for_devops_cross_account_view_only_access | ARN of iam_role_for_devops_cross_account_view_only_access (for use by DevOps team only) |
