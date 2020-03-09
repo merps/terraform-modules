@@ -12,8 +12,8 @@ The term 'child' in this module refers to any AWS account that is **NOT** used f
 ## How this module works
 
 * This module creates the following for a given child AWS account:
-    * IAM trust policy that allows [strut-central] account to assume roles into the given child AWS account
-    * IAM roles that can be assumed via the [strut-central] account
+    * IAM trust policy that allows [master-central-auth] account to assume roles into the given child AWS account
+    * IAM roles that can be assumed via the [master-central-auth] account
     * IAM access policies that allow roles to be assumed by the given [client-auth-account-id] AWS account
     * IAM roles that correspond to AWS-managed job function permissions for the child account
 
