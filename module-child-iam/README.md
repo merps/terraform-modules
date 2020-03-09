@@ -12,13 +12,8 @@ The term 'child' in this module refers to any AWS account that is **NOT** used f
 ## How this module works
 
 * This module creates the following for a given child AWS account:
-<<<<<<< HEAD
-    * IAM trust policy that allows [master-central] account to assume roles into the given child AWS account
-    * IAM roles that can be assumed via the [master-central] account
-=======
     * IAM trust policy that allows [master-central-auth] account to assume roles into the given child AWS account
     * IAM roles that can be assumed via the [master-central-auth] account
->>>>>>> de095a4c56851c831d404a666fe8c025e2b8a7b7
     * IAM access policies that allow roles to be assumed by the given [client-auth-account-id] AWS account
     * IAM roles that correspond to AWS-managed job function permissions for the child account
 
@@ -71,11 +66,7 @@ The following example is for deploying the module inside of a project's logging 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | client-auth-account-id | Account ID of the client / project's central auth AWS account. | string | - | yes |
-<<<<<<< HEAD
-| devops-auth-account-id | Account ID of the DevOps central auth AWS account, defaults to account id of [master-central]. | string | `946231429173` | no |
-=======
 | ddevops-auth-account-id | Account ID of the DDevOps central auth AWS account, defaults to account id of [master-central-auth]. | string | `123456789` | no |
->>>>>>> de095a4c56851c831d404a666fe8c025e2b8a7b7
 | policy-arn-for-administrator-access |  | string | `arn:aws:iam::aws:policy/AdministratorAccess` | no |
 | policy-arn-for-billing |  | string | `arn:aws:iam::aws:policy/job-function/Billing` | no |
 | policy-arn-for-data-scientist |  | string | `arn:aws:iam::aws:policy/job-function/DataScientist` | no |
@@ -123,7 +114,6 @@ The following example is for deploying the module inside of a project's logging 
 | iam_role_for_cross_account_system_administrator | ARN of iam_role_for_cross_account_system_administrator (for use by client / project team only) |
 | iam_role_for_cross_account_view_only_access | ARN of iam_role_for_cross_account_view_only_access (for use by client / project team only) |
 | iam_role_for_devops_cross_account_administrator_access | ARN of iam_role_for_devops_cross_account_administrator_access (for use by DevOps team only) |
-<<<<<<< HEAD
 | iam_role_for_devops_cross_account_billing | ARN of iam_role_for_devops_cross_account_billing (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_data_scientist | ARN of iam_role_for_devops_cross_account_data_scientist (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_database_administrator | ARN of iam_role_for_devops_cross_account_database_administrator (for use by DevOps team only) |
@@ -133,14 +123,3 @@ The following example is for deploying the module inside of a project's logging 
 | iam_role_for_devops_cross_account_support_user | ARN of iam_role_for_devops_cross_account_support_user (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_system_administrator | ARN of iam_role_for_devops_cross_account_system_administrator (for use by DevOps team only) |
 | iam_role_for_devops_cross_account_view_only_access | ARN of iam_role_for_devops_cross_account_view_only_access (for use by DevOps team only) |
-=======
-| iam_role_for_devops_cross_account_billing | ARN of iam_role_for_ddevops_cross_account_billing (for use by DDevOps team only) |
-| iam_role_for_devops_cross_account_data_scientist | ARN of iam_role_for_ddevops_cross_account_data_scientist (for use by DDevOps team only) |
-| iam_role_for_devops_cross_account_database_administrator | ARN of iam_role_for_devops_cross_account_database_administrator (for use by DevOps team only) |
-| iam_role_for_devops_cross_account_network_administrator | ARN of iam_role_for_ddevops_cross_account_network_administrator (for use by DevOps team only) |
-| iam_role_for_ddevops_cross_account_power_user_access | ARN of iam_role_for_devops_cross_account_power_user_access (for use by DevOps team only) |
-| iam_role_for_ddevops_cross_account_security_audit | ARN of iam_role_for_devops_cross_account_security_audit (for use by DevOps team only) |
-| iam_role_for_ddevops_cross_account_support_user | ARN of iam_role_for_devops_cross_account_support_user (for use by DevOps team only) |
-| iam_role_for_devops_cross_account_system_administrator | ARN of iam_role_for_devops_cross_account_system_administrator (for use by DevOps team only) |
-| iam_role_for_devops_cross_account_view_only_access | ARN of iam_role_for_devops_cross_account_view_only_access (for use by DevOps team only) |
->>>>>>> de095a4c56851c831d404a666fe8c025e2b8a7b7
