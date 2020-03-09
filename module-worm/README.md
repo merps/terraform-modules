@@ -27,7 +27,7 @@ The term 'logging-account' in this module refers to an AWS account that is desig
     * Logging account's Kineses Firehose Delivery Stream invokes a Lambda function to process incoming CloudWatch Log events, this extracts individual log events from records sent by the child account's CloudWatch subscription filter.
     * Logging account's Kineses Firehose Delivery Stream sends the processed CloudWatch Log events to the designated S3 bucket (WORM drive)
 
-![diagram.png](https://bitbucket.org/strutdigital/s-toolbox/raw/master/terraform/module-worm/diagram.png)
+![diagram.png](https://github.org/merps/terraform-modules/raw/master/module-worm/diagram.png)
 
 ## Usage
 

@@ -22,7 +22,7 @@ This module sets up the following:
     * Logging account's Kineses Firehose Delivery Stream invokes a Lambda function to process incoming CloudWatch Log events, this extracts individual log events from records sent by the child account's CloudWatch subscription filter.
     * Logging account's Kineses Firehose Delivery Stream sends the processed CloudWatch Log events to the designated S3 bucket (WORM drive)
 
-![diagram.png](https://bitbucket.org/strutdigital/s-toolbox/raw/master/terraform/module-child-cloudwatch-connector/diagram.png)
+![diagram.png](https://github.org/merps/raw/master/terraform-modules/module-child-cloudwatch-connector/diagram.png)
 
 ## Usage
 
