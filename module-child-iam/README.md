@@ -12,13 +12,8 @@ The term 'child' in this module refers to any AWS account that is **NOT** used f
 ## How this module works
 
 * This module creates the following for a given child AWS account:
-<<<<<<< HEAD
-    * IAM trust policy that allows [master-central] account to assume roles into the given child AWS account
-    * IAM roles that can be assumed via the [master-central] account
-=======
     * IAM trust policy that allows [master-central-auth] account to assume roles into the given child AWS account
     * IAM roles that can be assumed via the [master-central-auth] account
->>>>>>> de095a4c56851c831d404a666fe8c025e2b8a7b7
     * IAM access policies that allow roles to be assumed by the given [client-auth-account-id] AWS account
     * IAM roles that correspond to AWS-managed job function permissions for the child account
 
@@ -71,11 +66,7 @@ The following example is for deploying the module inside of a project's logging 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | client-auth-account-id | Account ID of the client / project's central auth AWS account. | string | - | yes |
-<<<<<<< HEAD
-| devops-auth-account-id | Account ID of the DevOps central auth AWS account, defaults to account id of [master-central]. | string | `946231429173` | no |
-=======
 | ddevops-auth-account-id | Account ID of the DDevOps central auth AWS account, defaults to account id of [master-central-auth]. | string | `123456789` | no |
->>>>>>> de095a4c56851c831d404a666fe8c025e2b8a7b7
 | policy-arn-for-administrator-access |  | string | `arn:aws:iam::aws:policy/AdministratorAccess` | no |
 | policy-arn-for-billing |  | string | `arn:aws:iam::aws:policy/job-function/Billing` | no |
 | policy-arn-for-data-scientist |  | string | `arn:aws:iam::aws:policy/job-function/DataScientist` | no |
